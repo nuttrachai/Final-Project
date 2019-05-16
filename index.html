@@ -3,5 +3,36 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+<div id="regions_div" style="width: 900px; height: 500px;"></div>
 </body>
 </html>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+			['Country', 'Popularity'],
+			['Cambodia',	1384.423187],
+			["LA",	2457.377414],
+			['Malaysia',	9951.544153],
+			['Myanmar',	1256.660675],
+			['Thailand',	6595.004125],
+			['Vietnam',	2342.244003]
+        ]);
+
+      var options = {};
+      options['region'] = 'TH';
+      options['colorAxis']	=	{colors: ['#a0e7a0', 'green']}
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+</script>       

@@ -1,39 +1,694 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h3 align="center">Data Visualization and Communication</h3>
-<p align="center" >6114552407 Nuttrachai Promptsook</p>
-<p style="color: blue;">Thailand and neighbor GDP per capita (US$) 2017</p>
-<div id="regions_div" style="width: 100%; height: 450px;"></div>
-</body>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="Grayrids">
+		<title>Data Visualization and Communication</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/line-icons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nivo-lightbox.css">
+		<link rel="stylesheet" href="css/main.css">    
+		<link rel="stylesheet" href="css/responsive.css">
+		<style>
+		.section-header .section-title{
+			background-color: #3c96ff!important;
+			background-image: linear-gradient(to top left, #3c96ff, #3c96ff)!important;
+		}
+		</style>
+
+	</head>
+  
+	<body>
+
+		<!-- Header Section Start -->
+		<header id="home" class="hero-area-2">    
+			<div class="overlay"></div>
+			<nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+				<div class="container"> 
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="lni-menu"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav mr-auto w-100 justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Geo-visualization">Geo-visualization</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Time-series">Time-series</a>
+							</li> 							
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Deviation">Deviation</a>
+							</li>                            
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Distribution">Distribution</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#Correlation">Correlation</a>
+							</li>							
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#pricing">Plans</a>
+							</li>  
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#download">Download</a>
+							</li> 
+							<li class="nav-item">
+								<a class="nav-link page-scroll" href="#map-area">Contact</a>
+							</li> 
+						</ul>
+					</div>
+				</div>
+			</nav>  
+			<div class="container" style="padding-bottom: 10em;">      
+				<div class="row space-100">
+					<div class="col-lg-12 col-md-12 col-xs-12">
+						<div class="contents" align="right">
+							<h2 class="head-title">Data Visualization and Communication <br></h2>
+							<h3 style="color: #fff;">6114552407 Nuttrachai Promptsook</h3>
+							<div class="header-button">
+								<a href="#" class="btn btn-border-filled" style="  font-size: 2em;">Final Presentation</a>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>             
+		</header>
+		<!-- Header Section End --> 
+
+		<!-- Geo-visualization Section Start -->
+		<div id="Geo-visualization" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Geo-visualization</p>       
+					<h3 class="section-title wow fadeIn" data-wow-delay="0.5s" >Thailand and neighbor GDP per capita (US$) 2017</h3>
+				</div>
+				<div class="row">
+					<div id="regions_div" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?end=2017&locations=Z4&start=2007&type=points&view=chart" target="_blank">https://data.worldbank.org/</a>
+				</div>
+			</div>
+		</div>
+		<!-- Geo-visualization Section End -->
+
+		<!-- Time-series Section Start -->
+		<div id="Time-series" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Time-series</p>       
+					<h3 class="section-title wow fadeIn" data-wow-delay="0.5s" >Thailand and neighbor GDP per capita growth (annual %)</h3>
+				</div>
+				<div class="row">
+					<div id="chart_div" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+				</div>
+			</div>
+		</div>
+		<!-- Time-series Section End -->
+
+ 		<!-- Deviation Section Start -->
+		<section id="Deviation" class="screens-shot section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Deviation</p>       
+					<h3 class="section-title">Thailand and neighbor GDP Growth Rates (Compare World Average)</h3>
+				</div>
+				<div class="row">
+					<div id="deviation" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+				</div>
+			</div>
+		</section>
+		<!-- Deviation Section End -->  
+
+		<!-- Distribution Section Start -->
+		<section id="Distribution" class="section">
+			<div class="container">
+				<div class="section-header">   
+					<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Distribution Histogram</p>       
+					<h3 class="section-title">Thailand GDP Growth Rates (2001 - 2017)</h3>
+				</div>
+				<div class="row">
+					<div id="histogram" style="width: 100%; height: 450px;"></div>
+					Source	: <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=Z4" target="_blank">https://data.worldbank.org/</a>
+					<!-- https://www.softnix.co.th/2019/03/26/%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%AA%E0%B8%B5%E0%B9%83%E0%B8%99-data-visualization/ -->
+
+				</div>
+			</div>
+		</section>
+		<!-- Distribution Section End -->  
+		
+		<!-- Clients Section -->
+		<div id="Correlation" class="section">
+			<!-- Container Ends -->
+			<div class="container">
+				<!-- Row and Scroller Wrapper Starts -->
+				<div class="row" >
+					<div id="arg_div" style="width: 50%; height: 450px;"></div>
+					<div id="nonarg_div" style="width: 50%; height: 450px;"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Client Section End --> 
+
+		<!-- Subcribe Section Start -->
+		<div id="subscribe" class="section">
+		  <div class="container">
+			<div class="row justify-content-center">
+			  <div class="col-lg-7 col-md-12 col-xs-12">
+				<div class="subscribe-form">
+				  <div class="form-wrapper">
+					<div class="sub-title text-center">
+					  <h3>Subscribe For More Features</h3>
+					  <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p>
+					</div>
+					<form>
+					  <div class="row">
+						<div class="col-12 form-line">
+						  <div class="form-group form-search">
+							<input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+							<button type="submit" class="btn btn-common btn-search">Subscribe</button>
+						  </div> 
+						</div>
+					  </div>
+					</form>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- Subcribe Section End -->
+
+		<!-- Start Pricing Table Section -->
+		<div id="pricing" class="section pricing-section">
+		  <div class="container">
+			<div class="section-header">   
+			  <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Pricing</p>       
+			  <h2 class="section-title">Our Pricing Plan</h2>
+			</div>
+
+			<div class="row pricing-tables">
+			  <div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="pricing-table wow fadeInLeft" data-wow-delay="0.2s">
+				  <div class="pricing-details">
+					<div class="icon">
+					  <i class="lni-rocket"></i>
+					</div>
+					<h2>Free</h2>
+					<ul>
+					  <li>Free Installation</li>
+					  <li>2 GB Storage</li>
+					  <li>Single User</li>
+					  <li>Sales Dashboard</li>
+					  <li>Minimal Features</li>
+					  <li>1000 Logs</li>
+					</ul>
+					<div class="price">$0<span>/mo</span></div>
+				  </div>
+				  <div class="plan-button">
+					<a href="#" class="btn btn-border">Get Started</a>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="pricing-table pricing-active">
+				  <div class="pricing-details">
+					<div class="icon">
+					  <i class="lni-drop"></i>
+					</div>
+					<h2>Standard</h2>
+					<ul>
+					  <li>Free Installation</li>
+					  <li>10 GB Hosting</li>
+					  <li>5 Users</li>
+					  <li>Sales Dashboard</li>
+					  <li>Premium Features</li>
+					  <li>50,000 Logs</li>
+					</ul>
+					<div class="price">$99 <span>/mo</span></div>
+				  </div>
+				  <div class="plan-button">
+					<a href="#" class="btn btn-border">Get Started</a>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-lg-4 col-md-4 col-xs-12">
+				<div class="pricing-table">
+				  <div class="pricing-details">
+					<div class="icon">
+					  <i class="lni-briefcase"></i>
+					</div>
+					<h2>Business</h2>
+					<ul>
+					  <li>Free Installation</li>
+					  <li>50 GB Hosting</li>
+					  <li>Unlimited Users</li>
+					  <li>Sales and Marketing Dashbaord</li>
+					  <li>Premium Features</li>
+					  <li>Unlimited Logs</li>
+					</ul>
+					<div class="price">$199 <span>/mo</span></div>
+				  </div>
+				  <div class="plan-button">
+					<a href="#" class="btn btn-border">Get Started</a>
+				  </div>
+				</div>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+		<!-- End Pricing Table Section -->
+
+		<!-- download Section Start -->
+		<section id="download">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-6 col-md-6 col-xs-12">            
+				<div class="download-thumb wow fadeInLeft" data-wow-delay="0.2s">
+				  <img class="img-fluid" src="img/mac.png" alt="">
+				</div>
+			  </div>
+			  <div class="col-lg-6 col-md-6 col-xs-12">
+				<div class="download-wrapper wow fadeInRight" data-wow-delay="0.2s">
+				  <div>
+					<div class="download-text">
+					  <h4>Download Our App From Store</h4>
+					  <p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p>
+					</div>
+					<a href="#" class="btn btn-common btn-effect"><i class="lni-android"></i> From PlayStore<br></a>
+					<a href="#" class="btn btn-apple"><i class="lni-apple"></i> From AppStore<br></a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</section>
+		<!-- download Section Start -->
+
+		<!-- Blog Section -->
+		<section id="blog" class="section">
+		  <!-- Container Starts -->
+		  <div class="container">
+			 <div class="section-header">   
+			  <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Blog</p>       
+			  <h2 class="section-title">Recent News</h2>
+			</div>
+			<div class="row">
+			  <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
+				<!-- Blog Item Starts -->
+				<div class="blog-item-wrapper">
+				  <div class="blog-item-img">
+					<a href="single-post.html">
+					  <img src="img/blog/img1.jpg" alt="">
+					</a>   
+					<div class="author-img">
+					  <img src="img/blog/author.png" alt="">
+					</div>             
+				  </div>
+				  <div class="blog-item-text"> 
+					<h3><a href="single-post.html">How Proton Will Transform Your Business</a></h3>
+					<div class="author">
+					  <span class="name"><a href="#">Posted by Admin</a></span>
+					  <span class="date float-right">10 April, 2020</span>
+					</div>
+				  </div>
+				</div>
+				<!-- Blog Item Wrapper Ends-->
+			  </div>
+
+			  <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
+				<!-- Blog Item Starts -->
+				<div class="blog-item-wrapper">
+				  <div class="blog-item-img">
+					<a href="single-post.html">
+					  <img src="img/blog/img2.jpg" alt="">
+					</a>   
+					<div class="author-img">
+					  <img src="img/blog/author.png" alt="">
+					</div>             
+				  </div>
+				  <div class="blog-item-text"> 
+					<h3><a href="single-post.html">20 Growth Hacking Tips from Experts</a></h3>
+					<div class="author">
+					  <span class="name"><a href="#">Posted by Admin</a></span>
+					  <span class="date float-right">10 April, 2020</span>
+					</div>
+				  </div>
+				</div>
+				<!-- Blog Item Wrapper Ends-->
+			  </div>
+
+			  <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
+				<!-- Blog Item Starts -->
+				<div class="blog-item-wrapper">
+				  <div class="blog-item-img">
+					<a href="single-post.html">
+					  <img src="img/blog/img3.jpg" alt="">
+					</a>   
+					<div class="author-img">
+					  <img src="img/blog/author.png" alt="">
+					</div>             
+				  </div>
+				  <div class="blog-item-text"> 
+					<h3><a href="single-post.html">Proton Has Been Launched, Get Started!</a></h3>
+					<div class="author">
+					  <span class="name"><a href="#">Posted by Admin</a></span>
+					  <span class="date float-right">10 April, 2020</span>
+					</div>
+				  </div>
+				</div>
+				<!-- Blog Item Wrapper Ends-->
+			  </div>
+			</div>
+		  </div>
+		</section>
+		<!-- blog Section End -->
+
+		<!-- Map Section Start -->
+		<section id="map-area">
+		  <div class="container-fluid">
+			<div class="row">
+			  <div class="col-12 padding-0">
+				<object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
+			  </div>
+			</div>
+		  </div>
+		</section>
+		<!-- Map Section End -->
+
+		<!-- Contact Section Start -->
+		<section id="contact">      
+		  <div class="contact-form">
+			<div class="container">
+			  <div class="row justify-content-center"> 
+				<div class="offset-top">
+				  <div class="col-lg-12 col-md-12 col-xs-12">
+					<div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
+					  <div class="section-header">   
+						<p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Contact</p>       
+						<h2 class="section-title">Love to Hear From You</h2>
+					  </div>
+					  <form id="contactForm">
+						<div class="row">
+						  <div class="col-md-6">
+							<div class="form-group">
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+							  <div class="help-block with-errors"></div>
+							</div>                                 
+						  </div>
+						  <div class="col-md-6">
+							<div class="form-group">
+							  <input type="text" placeholder="Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+							  <div class="help-block with-errors"></div>
+							</div> 
+						  </div>
+						  <div class="col-md-12">
+							<div class="form-group">
+							  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required="" data-error="Please enter your subject">
+							  <div class="help-block with-errors"></div>
+							</div>
+						  </div>
+						  <div class="col-md-12">
+							<div class="form-group"> 
+							  <textarea class="form-control" id="message" placeholder="Message" rows="7" data-error="Write your message" required></textarea>
+							  <div class="help-block with-errors"></div>
+							</div>
+							<div class="submit-button">
+							  <button class="btn btn-common btn-effect" id="submit" type="submit">Submit</button>
+							  <div id="msgSubmit" class="h3 hidden"></div> 
+							  <div class="clearfix"></div> 
+							</div>
+						  </div>
+						</div>            
+					  </form>
+					</div>
+				  </div>
+				</div> 
+			  </div>
+			</div>
+		  </div>        
+		</section>
+		<!-- Contact Section End -->
+
+		<!-- Footer Section Start -->
+		<footer>
+		  <!-- Footer Area Start -->
+		  <section class="footer-Content">
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+				  <img src="img/logo.png" alt="">
+				  <div class="textwidget">
+					<p>Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.</p>
+				  </div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+				  <div class="widget">
+					<h3 class="block-title">Create a Free Account</h3>
+					<ul class="menu">
+					  <li><a href="#">Sign In</a></li>
+					  <li><a href="#">About Us</a></li>
+					  <li><a href="#">Pricing</a></li>
+					  <li><a href="#">Jobs</a></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+				  <div class="widget">
+					<h3 class="block-title">Resource</h3>
+					<ul class="menu">
+					  <li><a href="#">Comunnity</a></li>
+					  <li><a href="#">Become a Partner</a></li>
+					  <li><a href="#">Our Technology</a></li>
+					  <li><a href="#">Documentation</a></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+				  <div class="widget">
+					<h3 class="block-title">Support</h3>
+					<ul class="menu">
+					  <li><a href="#">Terms & Condition</a></li>
+					  <li><a href="#">Contact Us</a></li>
+					  <li><a href="#">Privacy Policy</a></li>
+					  <li><a href="#">Help</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Copyright Start  -->
+			<div class="copyright">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-12">
+					<div class="site-info float-left">
+					  <p>&copy; 2020 - Designed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+					</div>              
+					<div class="float-right">  
+					  <ul class="footer-social">
+						<li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+						<li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+						<li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+					  </ul> 
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  <!-- Copyright End -->
+		  </section>
+		  <!-- Footer area End -->
+		  
+		</footer>
+		<!-- Footer Section End --> 
+
+		<!-- Go To Top Link -->
+		<a href="#" class="back-to-top">
+		  <i class="lni-chevron-up"></i>
+		</a> 
+
+		<!-- Preloader -->
+		<div id="preloader">
+		  <div class="loader" id="loader-1"></div>
+		</div>
+		<!-- End Preloader -->
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="js/jquery-min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script> 
+		<script src="js/jquery.mixitup.js"></script>       
+		<script src="js/jquery.nav.js"></script>    
+		<script src="js/scrolling-nav.js"></script>    
+		<script src="js/jquery.easing.min.js"></script>     
+		<script src="js/wow.js"></script>   
+		<script src="js/jquery.counterup.min.js"></script>     
+		<script src="js/nivo-lightbox.js"></script>     
+		<script src="js/jquery.magnific-popup.min.js"></script>     
+		<script src="js/waypoints.min.js"></script>      
+		<script src="js/main.js"></script>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>	
+		<script>
+			google.charts.load('current', {
+				'packages':['geochart'],
+				// Note: you will need to get a mapsApiKey for your project.
+				// See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+				'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+			});
+			google.charts.setOnLoadCallback(drawRegionsMap);
+			function drawRegionsMap() {
+				var data = google.visualization.arrayToDataTable([
+					['Country', 'GDP per capita'],
+					['Cambodia',	1384.423187],
+					["LA",	2457.377414],
+					['Malaysia',	9951.544153],
+					['Myanmar',	1256.660675],
+					['Thailand',	6595.004125],
+					['Vietnam',	2342.244003]
+				]);
+				var options = {};
+				options['region'] = 'TH';
+				options['colorAxis']	=	{colors: ['#a0e7a0', 'green']};
+
+				var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+				chart.draw(data, options);
+			}
+			  
+			google.charts.load('current', {packages: ['corechart', 'line']});
+			google.charts.setOnLoadCallback(drawCurveTypes);
+
+			function drawCurveTypes() {
+				var data = new google.visualization.DataTable();
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', { role: 'annotation'}, 'Vietnam'],
+					[2013, 5.599918784, 6.705811096, 2.803783623, 7.45301583, 2.236675835, '2.237', 4.21688206],
+					[2014, 5.40187153, 6.272785911, 4.178597991, 7.000969064, 0.580417497, '0.58',4.784398867],
+					[2015, 5.333422892, 5.85998123, 3.397848423, 6.013869218, 2.658813525, '2.659', 5.508820999],
+					[2016, 5.203878487, 5.528425711, 2.672420491, 4.898526951, 2.973849715, '2.974', 5.090510776],
+					[2017, 5.473812703, 5.337134727, 4.433674457, 5.787698479, 3.650982958,  '3.651',5.725877848]
+				]);
+
+				var options = {
+					hAxis: {
+					  title: 'Year',
+					  ticks: [2013,2014,2015,2016,2017]
+					},
+					vAxis: {
+					  title: 'GDP Growth Rate(%)'
+					},
+					series: {
+					  1: {curveType: 'function'}
+					},
+					legend: { position: 'top' },
+					/*title: 'Thailand and neighbor GDP per capita growth (annual %)',*/
+					series: {
+						0: { color: '#C8E5C9' },
+						1: { color: '#C8E5C9' },
+						2: { color: '#C8E5C9' }, /*008001*/
+						3: { color: '#C8E5C9' },
+						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
+						5: { color: '#C8E5C9' },
+					}					
+				};
+
+				var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+			}
+
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawVisualization);
+
+			function drawVisualization() {
+				// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'Cambodia', 'Lao PDR', 'Malaysia', 'Myanmar', 'Thailand', 'Vietnam', 'World'],
+					[2013, 2.914, 3.686, 0.959, 4.209, 0.563, 1.947, 0],
+					[2014, 2.328, 2.865, 1.575, 3.314, -0.642, 1.948, 0],
+					[2015, 2.222, 2.540, 1.052, 2.633, 0.606, 2.327, 0],
+					[2016, 2.731, 2.964, 0.916, 2.512, 1.132, 2.650, 0],
+					[2017, 1.769, 1.700, 1.243, 1.928, 0.847, 1.897, 0],
+				]);
+
+				var options = {
+					vAxis: {title: 'Difference(%)'},
+					hAxis: {
+					  title: 'Year',
+					  ticks: [2013,2014,2015,2016,2017]					  
+					},					
+					seriesType: 'bars',
+					series: {
+						0: { color: '#C8E5C9' },
+						1: { color: '#C8E5C9' },
+						2: { color: '#C8E5C9' }, /*008001*/
+						3: { color: '#C8E5C9' },
+						4: { color: '#3EA73E', curveType: 'function', lineWidth: 5 },
+						5: { color: '#C8E5C9' },
+						6: { type: 'line'}
+					},
+					legend: { position: 'top' }
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('deviation'));
+				chart.draw(data, options);
+			}
+			
+			google.charts.load("current", {packages:["corechart"]});
+			google.charts.setOnLoadCallback(drawChart);
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+					['Year', 'GDP(annual %)'],
+					['2001', 2.49],
+					['2002', 5.27],
+					['2003', 6.39],
+					['2004', 5.56],
+					['2005', 3.51],
+					['2006', 4.33],
+					['2007', 4.84],
+					['2008', 1.19],
+					['2009', -1.19],
+					['2010', 6.99],
+					['2011', 0.36],
+					['2012', 6.75],
+					['2013', 2.24],
+					['2014', 0.58],
+					['2015', 2.66],
+					['2016', 2.97],
+					['2017', 3.65]]);
+
+				var options = {
+					legend: { position: 'top' },
+					vAxis: {
+					  title: 'Total'
+					},          
+					hAxis: {
+						title: 'GDP Growth Rate(%)',
+						ticks: [-2, 0, 2, 4, 6, 8, 10]
+					}          
+				};
+
+				var chart = new google.visualization.Histogram(document.getElementById('histogram'));
+				chart.draw(data, options);
+			}			
+		</script>    
+	</body>
 </html>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script>
-      google.charts.load('current', {
-        'packages':['geochart'],
-        // Note: you will need to get a mapsApiKey for your project.
-        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
-      });
-      google.charts.setOnLoadCallback(drawRegionsMap);
-
-      function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-			['Country', 'GDP per capita'],
-			['Cambodia',	1384.423187],
-			["LA",	2457.377414],
-			['Malaysia',	9951.544153],
-			['Myanmar',	1256.660675],
-			['Thailand',	6595.004125],
-			['Vietnam',	2342.244003]
-        ]);
-
-      var options = {};
-      options['region'] = 'TH';
-      options['colorAxis']	=	{colors: ['#a0e7a0', 'green']}
-
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-        chart.draw(data, options);
-      }
-</script>       
